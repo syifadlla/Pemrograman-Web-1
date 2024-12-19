@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Halaman Web</title>
+</head>
+<body style="font-family: Arial, sans-serif;margin: 0px; background-color: #fce4ec;">
+
+        <header> <!--HEADER-->
+            <style>
+                header{
+                    background-color: #d81b60; 
+                    color: white;
+                    padding: 20px;
+                    display: flex;
+                    align-items: center
+                }
+                img{
+                    width: 70px; 
+                    height: 70px; 
+                    border-radius: 50%; 
+                    margin-right: 15px; 
+                }
+            </style>
+            <img src="img/logo qesign.png" alt="logo">
+            <h1>HELLO! THIS IS QOMARIAH SYIFA FADILLAH</h1> <!--ingin diberi effect mengetik -->
+        </header>
+
+        <nav style="background-color: #c2185b; color: white; padding: 15px;"> <!--NAVIGASI-->
+            <section style="display: flex; justify-content: center; gap: 200px;">
+            <style>
+                a{
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 8px;
+                }
+            </style>
+
+            <a href="index.html">Home</a>
+            <a href="profile.html">My Profile</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="#footer">Copyright</a> <!--ingin diganti menjadi contact me yang berada di footer-->
+        </section>
+    </nav>
+
+    <div style="display: flex;"> <!--GABUNGAN ARTICLE & ASIDE-->
+        <style>
+            .section{
+                margin-bottom: 20px;
+            }
+            .bg {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+
+    <a href="multimedia.html" style="text-decoration: none;">
+    <article style="flex: 2; margin: 20px; margin-right: 0px; background-color: #f8bbd0; border-radius: 8px; padding: 20px;"> <!--ARTICLE-->
+        <section class="bg">
+            <h2 style="color: #d81b60;">Multimedia</h2><hr>
+
+            <h2 style="color: #d81b60;">Logo qesign</h2>
+            <img src="img/logo qesign.png" alt="Foto 1" style="width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+            <p style="color: #d81b60; font-weight: lighter;">gambar 1.0 logo qesign </p>
+            <p style="color: black; font-weight: lighter;">Logo ini dibuat untuk foto profil Instagram Portofolio saya saat masih siswa SMK Taruna Bhakti Depok. Huruf 'q' sendiri diambil dari nama depan saya yaitu Qomariah, dan untuk 'esign' diambil dari kata design. Harapan saya, saya dapat membuat motion animasi dari logo yang telah saya buat.</p>
+        </section>
+        <section class="bg">
+            <h2 style="color: #d81b60;">Qomariah Syifa Fadillah</h2>
+            <img src="img/syifa.jpg" alt="Foto 2" style="width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+            <p style="color: #d81b60; font-weight: lighter;">gambar 2.0 foto syifa</p>
+            <p style="color: black; font-weight: lighter;">Berikut adalah foto saya yang sedang memakai baju dan kerudung berwarna coklat disertai latar belakang yang senada.</p>
+        </section>
+        <section class="bg">
+            <h2 style="color: #d81b60;">Park Jisung</h2>
+            <img src="img/jisungku.jpg" alt="Foto 2" style="width: 100%; height: auto; margin-top: 10px; border-radius: 5px;">
+            <p style="color: #d81b60; font-weight: lighter;">gambar 3.0 foto jisung</p>
+            <p style="color: black; font-weight: lighter;">Berikut adalah foto bias saya. Ya, saya mengakui bahwa ia bukanlah pacar saya. Namun, saya merupakan salah satu Asteroids(fans Park Jisung). Mengapa ia saya tampilkan pada web ini? Entahlah.. </p>
+        </section>
+    </article>
+
+    <a href="index.html" style="text-decoration: none;">
+    <aside style="flex: 1; margin: 20px; background-color: #fff; border-radius: 8px; padding: 20px;"> <!--ASIDE-->
+        <h2 style="color: #d81b60;">Perkenalkan,</h2>
+        <p style="margin: 5px; font-size: 12px; color: black"><i>Saya Qomariah Syifa Fadillah. Saat ini, saya bersekolah di STT Terpadu Nurul Fikri dengan fokus pada program studi Sistem Informasi. </i></p>
+        <p style="margin: 5px; font-size: 12px; color: black"><i>Saya adalah lulusan 2023 dari SMK Taruna Bhakti Depok dengan jurusan Multimedia. Di sekolah, saya mempelajari berbagai aspek desain,</i></p>
+        <p style="margin: 5px; font-size: 12px; color: black"><i>Saya adalah lulusan 2023 dari SMK Taruna Bhakti Depok dengan jurusan Multimedia. Di sekolah, saya mempelajari berbagai aspek desain,</i></p>
+
+    </aside>   
+    
+    </div>
+
+    <a href="multimedia.html" style="text-decoration: none;"> 
+    <footer id="footer" style="background-color: #c2185b; color: white; text-align: center; padding: 10px; position: fixed; left: 0; bottom: 0;  width: 100%;"> <!--FOOTER-->
+            <p>&copy; Copyright QOMARIAH SYIFA FADILLAH 2024</p><!--footer seharusnya full, tapi tidak ingin dalam kondisi fixed-->
+    </footer>
+</body>
+</html>

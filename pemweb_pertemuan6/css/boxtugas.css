@@ -1,0 +1,84 @@
+/* CSS untuk cssbox1.html ---------------------------------------------------------------------------------------------------*/
+
+.box{
+    border: 2px solid black;
+    float: left;
+    margin: auto 50px 50px; 
+    justify-content: center;
+}
+
+.box:nth-child(1){
+    background-color: palegreen;
+    width: 1700px;
+    height: 200px;
+    margin-top: 50px;
+}
+.box:nth-child(2){
+    background-color: yellow;
+    width: 400px;
+    height: 400px;
+}
+.box:nth-child(3){
+    background-color: orangered;
+    width: 1250px;
+    height: 400px;
+    margin-left: 0;
+}
+.box:nth-child(4){
+    background-color: yellow;
+    width: 400px;
+    height: 300px;
+} 
+.box:nth-child(5){
+    background-color: cyan;
+    width: 1250px;
+    height: 300px;
+    margin-left: 0;
+} 
+
+/* CSS untuk cssbox2.html ---------------------------------------------------------------------------------------------------*/
+
+.box2{
+    border: 2px solid black;
+    float: left;
+    margin: auto 50px 50px; 
+    justify-content: center;
+}
+
+.box2:nth-child(1){
+    background-color: yellow;
+    width: 400px;
+    height: 200px;
+    margin-top: 50px;
+}
+.box2:nth-child(2){
+    background-color: orangered;
+    width: 1200px;
+    height: 200px;
+    margin-left: 0;
+    margin-top: 50px;
+}
+.box2:nth-child(3){
+    background-color: palegreen;
+    width: 400px;
+    height: 1000px;
+    margin-left: 50px;
+}
+.box2:nth-child(4){
+    background-color: gainsboro;
+    width: 750px;
+    height: 1000px;
+    margin-left: 0;
+} 
+.box2:nth-child(5){
+    background-color: cyan;
+    width: 398px;
+    height: 1000px;
+    margin-left: 0;
+} 
+.box2:nth-child(6){
+    background-color: blue;
+    width: 1660px;
+    height: 200px;
+    margin-left: 50px;
+} 

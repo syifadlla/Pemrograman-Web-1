@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+</head>
+<body>
+    <h1>Form Pemesanan Tiket</h1>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" maxlength="30" placeholder="Maks. 30 karakter" required>
+    <span id="name_error" style="color: red; display: none;">Data tidak Valid</span><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+    <span id="email_error" style="color: red; display: none;">Data tidak Valid</span><br><br>
+
+    <label for="jam">Jam Keberangkatan:</label>
+    <input type="time" id="jam" name="jam" required>
+    <span id="jam_error" style="color: red; display: none;">Data tidak Valid</span><br><br>
+
+    <label for="tujuan">Tujuan Keberangkatan:</label>
+    <input type="text" id="tujuan" name="tujuan" placeholder="ex.: Bogor" required>
+    <span id="tujuan_error" style="color: red; display: none;">Data tidak Valid</span><br><br>
+
+    <label for="jumlah">Jumlah Tiket:</label>
+    <input type="number" id="jumlah" name="jumlah" min="1" max="10" required>
+    <span id="jumlah_error" style="color: red; display: none;">Data tidak Valid</span><br><br>
+
+    <button type="button" onclick='validasi_form()'>Submit</button>
+
+    <div id="result"></div>
+
+    <script>
+        function validasi_form() {
+
+            let isValid = true;
+            document.getElementById("name_error").style.display = "none";
+            document.getElementById("email_error").style.display = "none";
+            document.getElementById("jam_error").style.display = "none";
+            document.getElementById("tujuan_error").style.display = "none";
+            document.getElementById("jumlah_error").style.display = "none";
+            
+            const nama = document.getElementById("nama").value;
+            const email = document.getElementById("email").value;
+            const jam = document.getElementById("jam").value;
+            const tujuan = document.getElementById("tujuan").value;
+            const jumlah = document.getElementById("jumlah").value;
+
+            if (nama.length > 30) {
+                document.getElementById("name_error").style.display = "inline";
+                isValid = false;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("email_error").style.display = "inline";
+                isValid = false;
+            }
+
+            const jamPattern = /^([01]?[0-9]|2[0-3]):([0-5]?[0-9])$/;
+            if (!jamPattern.test(jam)) {
+                document.getElementById("jam_error").style.display = "inline";
+                isValid = false;
+            }
+
+            if (tujuan.trim() === "") {
+                document.getElementById("tujuan_error").style.display = "inline";
+                isValid = false;
+            }
+
+            if (jumlah < 1 || jumlah > 10) {
+                document.getElementById("jumlah_error").style.display = "inline";
+                isValid = false;
+            }
+
+            if (isValid) {
+                document.getElementById("result").innerHTML = `
+                    <h3>Data Pemesanan</h3>
+                    <p>Nama: ${nama}</p>
+                    <p>Email: ${email}</p>
+                    <p>Jam Keberangkatan: ${jam} WIB</p>
+                    <p>Tujuan Keberangkatan: ${tujuan}</p>
+                    <p>Jumlah Tiket: ${jumlah} tiket</p>
+                `;
+            }
+
+            return false; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* CSS untuk cssbox1.html ---------------------------------------------------------------------------------------------------*/
+
+.box{
+    width: 200px;
+    border: 1px solid black;
+    height: 400px;
+    /* background-color: plum; hapus aja karna bakal ketimpa/gaguna */
+    float: left;
+    margin: auto 10px; /* auto untuk menyesuaikan hardware/gadget user */
+}
+
+/* nth-child untuk agar tidak perlu merubah nama class(class semu) */
+.box:nth-child(1){
+    background-color: palegoldenrod;
+}
+.box:nth-child(2){
+    background-color: palevioletred;
+}
+.box:nth-child(3){
+    background-color: palegreen;
+}
+.box:nth-child(4){
+    background-color: paleturquoise;
+} 
+
+/* CSS untuk cssbox2.html ---------------------------------------------------------------------------------------------------*/
+
+.img-item{
+    width: 150px;
+}
+.img-item2{
+    width: 116px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin-right: 10px;
+}
+

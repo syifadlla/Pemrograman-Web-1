@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Pemesanan</title>
+</head>
+
+<body>
+    <style>
+        label{
+            font-weight: bold;
+            color: #548412;
+        }
+    </style>
+
+    <fieldset style="margin:  0px 250px;background-color: #F6EEC9;" >
+
+    <h1 style="text-align: center;color: #A20A0A;">BEAT_ZZA</h1>
+    <h4 style="text-align: center;">Hello, Welcome to BEAT_ZZA-!! Are you want to delivery order now? </h4>
+    <hr>
+
+    <form action="thankyou.html">
+        <fieldset>
+            <legend><h3 style="color: #A20A0A;">Complete This Form</h3></legend>
+        <label for="nama">Name:</label>
+        <input type="text" id="nama" required><br><br>
+        
+        <label for="email">Feedback (Email):</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="phone">Telephone:</label>
+        <input type="number" id="phone" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" required></textarea><br><br>
+
+        <label for="instruction">Delivery Instruction:</label> <!--ctrl+d untuk cepat merubah kata--> 
+        <textarea name="instruction" id="instruction" placeholder="No more than 400 character" required></textarea><br>
+    </fieldset>
+
+    <fieldset>
+        <legend><h3 style="color: rgb(174, 47, 47);">Choose Your-Beat</h3></legend>
+
+        <label for="crust">Crust (Choose One):</label><br>
+
+        <input type="radio" id="classic_white" name="crust">
+        <label for="classic_white">Classic White</label><br>
+        <input type="radio" id="whole_wheat" name="crust">
+        <label for="whole_wheat">Whole Wheat</label><br>
+        <input type="radio" id="cheese" name="crust">
+        <label for="cheese">Cheese</label><br><br>
+
+        <label>Topping (Can Choose More Than One):</label><br>
+        <input type="checkbox" name="topping">
+        <label for="topping"> Red Sauce </label><br>
+        <input type="checkbox" name="topping">
+        <label for="topping">White Sauce</label><br>
+        <input type="checkbox" name="topping">
+        <label for="topping">Mozarella</label><br>
+
+    </fieldset><br>
+
+        <input type="submit" value="Order Now">
+        <input type="reset" value="Back">
+    </form>
+</fieldset>
+</body>
+</html>
